@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Biblioteca Digital</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <header class="header">
+      <h1>📚 Biblioteca Digital</h1>
+      <p>Gerencie seus livros e empréstimos com eficiência</p>
+    </header>
+
+    <div id="notificacao" class="notificacao"></div>
+
+    <main class="main-content">
+      <section class="secao secao-livros">
+        <div class="secao-header">
+          <h2>📖 Livros</h2>
+          <button class="btn btn-primary" onclick="mostrarFormLivro()">+ Novo Livro</button>
+        </div>
+
+        <div id="formLivro" class="form-container hidden">
+          <h3>Novo Livro</h3>
+          <form onsubmit="salvarLivro(event)">
+            <div class="form-group">
+              <label for="tituloLivro">Título:</label>
+              <input type="text" id="tituloLivro" required>
+            </div>
+            <div class="form-group">
+              <label for="autorLivro">Autor:</label>
+              <input type="text" id="autorLivro" required>
+            </div>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="isbnLivro">ISBN:</label>
+                <input type="text" id="isbnLivro">
+              </div>
+              <div class="form-group">
+                <label for="editoraLivro">Editora:</label>
+                <input type="text" id="editoraLivro">
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="anoLivro">Ano:</label>
+                <input type="number" id="anoLivro" min="1000" max="9999">
+              </div>
+              <div class="form-group">
+                <label for="categoriaLivro">Categoria:</label>
+                <input type="text" id="categoriaLivro">
+              </div>
+            </div>
+            <div class="form-actions">
+              <button type="submit" class="btn btn-success">Salvar</button>
+              <button type="button" class="btn btn-secondary" onclick="ocultarFormLivro()">Cancelar</button>
+            </div>
+          </form>
+        </div>
+
+        <div id="listaLivros" class="lista-container">
+          <p class="vazio">Nenhum livro cadastrado. Clique em "+ Novo Livro" para começar.</p>
+        </div>
+      </section>
+
+      <section class="secao secao-emprestimos">
+        <div class="secao-header">
+          <h2>🔄 Empréstimos</h2>
+          <button class="btn btn-primary" onclick="mostrarFormEmprestimo()">+ Novo Empréstimo</button>
+        </div>
+
+        <div id="formEmprestimo" class="form-container hidden">
+          <h3>Novo Empréstimo</h3>
+          <form onsubmit="salvarEmprestimo(event)">
+            <div class="form-group">
+              <label for="livroEmprestimo">Livro:</label>
+              <select id="livroEmprestimo" required>
+                <option value="">Selecione um livro</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="nomeLeitor">Nome do Leitor:</label>
+              <input type="text" id="nomeLeitor" required>
+            </div>
+            <div class="form-group">
+              <label for="emailLeitor">Email:</label>
+              <input type="email" id="emailLeitor" required>
+            </div>
+            <div class="form-group">
+              <label for="dataDevolucao">Data de Devolução Prevista:</label>
+              <input type="date" id="dataDevolucao" required>
+            </div>
+            <div class="form-actions">
+              <button type="submit" class="btn btn-success">Salvar</button>
+              <button type="button" class="btn btn-secondary" onclick="ocultarFormEmprestimo()">Cancelar</button>
+            </div>
+          </form>
+        </div>
+
+        <div id="listaEmprestimos" class="lista-container">
+          <p class="vazio">Nenhum empréstimo registrado. Clique em "+ Novo Empréstimo" para começar.</p>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>© 2026 Biblioteca Digital | Desenvolvido com Node.js + Express</p>
+    </footer>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
