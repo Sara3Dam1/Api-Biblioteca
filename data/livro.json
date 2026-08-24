@@ -1,0 +1,35 @@
+[
+  {
+    "id": 1,
+    "titulo": "1984",
+    "autor": "George Orwell",
+    "isbn": "978-0451524935",
+    "editora": "Companhia das Letras",
+    "ano": 1949,
+    "categoria": "Ficção Científica",
+    "disponivel": true,
+    "dataCadastro": "2024-01-15T10:00:00.000Z"
+  },
+  {
+    "id": 2,
+    "titulo": "Dom Casmurro",
+    "autor": "Machado de Assis",
+    "isbn": "978-8535909395",
+    "editora": "Companhia das Letras",
+    "ano": 1899,
+    "categoria": "Literatura Brasileira",
+    "disponivel": true,
+    "dataCadastro": "2024-01-20T15:30:00.000Z"
+  },
+  {
+    "id": 3,
+    "titulo": "O Cortiço",
+    "autor": "Aluísio Azevedo",
+    "isbn": "978-8508076490",
+    "editora": "Editora 34",
+    "ano": 1890,
+    "categoria": "Literatura Brasileira",
+    "disponivel": true,
+    "dataCadastro": "2024-02-01T08:45:00.000Z"
+  }
+]

@@ -1,0 +1,32 @@
+[
+  {
+    "id": 1,
+    "livroId": 1,
+    "nomeLeitor": "João Silva",
+    "emailLeitor": "joao@example.com",
+    "dataEmprestimo": "2024-01-20T10:00:00.000Z",
+    "dataDevolucaoPrevista": "2024-02-03T23:59:59.000Z",
+    "dataDevolucaoReal": null,
+    "status": "ativo"
+  },
+  {
+    "id": 2,
+    "livroId": 2,
+    "nomeLeitor": "Maria Santos",
+    "emailLeitor": "maria@example.com",
+    "dataEmprestimo": "2024-02-05T14:30:00.000Z",
+    "dataDevolucaoPrevista": "2024-02-19T23:59:59.000Z",
+    "dataDevolucaoReal": null,
+    "status": "ativo"
+  },
+  {
+    "id": 3,
+    "livroId": 1,
+    "nomeLeitor": "Pedro Costa",
+    "emailLeitor": "pedro@example.com",
+    "dataEmprestimo": "2024-01-10T09:00:00.000Z",
+    "dataDevolucaoPrevista": "2024-01-24T23:59:59.000Z",
+    "dataDevolucaoReal": "2024-01-23T16:45:00.000Z",
+    "status": "finalizado"
+  }
+]
